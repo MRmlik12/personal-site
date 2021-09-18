@@ -3,8 +3,11 @@ module.exports = {
     browser: true,
     es2021: true
   },
+  ignorePatterns: ["*.d.ts"],
   extends: [
+    'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
     'google',
     'prettier'
   ],
