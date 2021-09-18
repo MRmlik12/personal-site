@@ -1,19 +1,31 @@
-import React, {ReactElement} from 'react';
-import ReactFullpage from '@fullpage/react-fullpage';
+import React, { ReactElement } from "react";
+import ReactFullpage from "@fullpage/react-fullpage";
+import "./App.css";
+import Home from "./views/Home";
+import Technologies from "./views/Technologies";
+import Projects from "./views/Projects";
+import Contact from "./views/Contact";
 
-function App(): ReactElement {
+export default function App(): ReactElement {
   return (
-    <div>
+    <div className="app">
       <ReactFullpage
+        navigation={true}
         scrollingSpeed={1000}
         render={() => {
           return (
             <ReactFullpage.Wrapper>
-              <div className='section'>
-                <h1>Hello</h1>
+              <div className="section home">
+                <Home />
               </div>
-              <div className='section'>
-                <h1>World</h1>
+              <div className="section technologies">
+                <Technologies />
+              </div>
+              <div className="section projects">
+                <Projects />
+              </div>
+              <div className="section contact">
+                <Contact />
               </div>
             </ReactFullpage.Wrapper>
           );
@@ -21,6 +33,4 @@ function App(): ReactElement {
       />
     </div>
   );
-};
-
-export default App;
+}
