@@ -12,10 +12,8 @@ jobs:
     - name: Install Node.Js
       uses: actions/setup-node@v2
       with:
-        node-version: '12.x'
-    - name: Change current directory to frontend
-      run: cd ./frontend
+        node-version: '14.x'
     - name: Install dependencies
-      run: yarn
+      run: yarn --cwd frontend
     - name: Run linter
-      run: yarn lint
+      run: yarn --cwd frontend lint
