@@ -1,10 +1,10 @@
-import React, { ReactElement } from "react";
-import ReactFullpage from "@fullpage/react-fullpage";
-import "./App.css";
-import Home from "./views/Home";
-import Technologies from "./views/Technologies";
-import Projects from "./views/Projects";
-import Contact from "./views/Contact";
+import React, {ReactElement} from 'react';
+import ReactFullpage from '@fullpage/react-fullpage';
+import './App.css';
+import Home from './views/Home';
+import Technologies from './views/Technologies';
+import Projects from './views/Projects';
+import Contact from './views/Contact';
 
 export default function App(): ReactElement {
   return (
