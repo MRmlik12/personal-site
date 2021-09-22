@@ -20,7 +20,7 @@ export default function ContactForm(): ReactElement {
           type="email"
           placeholder="E-mail address"
         />
-        <br />
+        <br/>
         <textarea
           className={textAreaStyle}
           placeholder="Your message content"
