@@ -1,7 +1,7 @@
-import React, { ReactElement } from "react";
-import ContactForm from "../components/contact/ContactForm";
-import ContactDescription from "../components/contact/ContactDescription";
-import ContactSocialBadges from "../components/contact/ContactSocialBadges";
+import React, {ReactElement} from 'react';
+import ContactForm from '../components/contact/ContactForm';
+import ContactDescription from '../components/contact/ContactDescription';
+import ContactSocialBadges from '../components/contact/ContactSocialBadges';
 
 export default function Contact(): ReactElement {
   return (
