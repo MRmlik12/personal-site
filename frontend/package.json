@@ -25,7 +25,7 @@
     "test": "craco test",
     "eject": "react-scripts eject",
     "lint": "eslint ./src",
-    "prettier": "prettier --write ./src"
+    "prettier-eslint": "eslint-config-prettier ./src/index.tsx"
   },
   "eslintConfig": {
     "extends": [
