@@ -7,7 +7,11 @@ export default function ContactForm(): ReactElement {
   return (
     <div className="block mt-16">
       <form>
-        <input className={inputStyle} type="text" placeholder="Title of your message" />
+        <input
+          className={inputStyle}
+          type="text"
+          placeholder="Title of your message"
+        />
         <br />
         <input
           className={inputStyle}
