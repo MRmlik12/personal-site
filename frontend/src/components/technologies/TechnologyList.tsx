@@ -1,8 +1,8 @@
 import React, {ReactElement} from 'react';
 import dotnetLogo from '../../assets/logos/technologies/dotnet-logo.png';
-import aspnetcoreLogo from
+import aspNetCoreLogo from
     '../../assets/logos/technologies/aspdotnetcore-logo.png';
-import efcoreLogo from
+import efCoreLogo from
     '../../assets/logos/technologies/efcore-logo.png';
 import dockerLogo from
     '../../assets/logos/technologies/docker-logo.png';
@@ -23,11 +23,11 @@ export default function TechnologyList(): ReactElement {
         alt='dotnet'
         className='technology h-40 mx-10'/>
       <img
-        src={aspnetcoreLogo}
+        src={aspNetCoreLogo}
         alt='aspnetcore'
         className='technology h-40 mx-10' />
       <img
-        src={efcoreLogo}
+        src={efCoreLogo}
         alt='efcore'
         className='technology h-40 mx-10' />
       <img
