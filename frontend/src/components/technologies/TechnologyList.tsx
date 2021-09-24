@@ -14,7 +14,10 @@ import './TechnologyList.sass';
 
 export default function TechnologyList(): ReactElement {
   return (
-    <div className='flex mx-auto p-10'>
+    <div
+      className=
+        // eslint-disable-next-line max-len
+        'technologyList grid grid-flow-row gap-11 grid-cols-3 mx-auto p-10 auto-cols-auto justify-items-center'>
       <img
         src={dotnetLogo}
         alt='dotnet'
@@ -22,22 +25,22 @@ export default function TechnologyList(): ReactElement {
       <img
         src={aspnetcoreLogo}
         alt='aspnetcore'
-        className='technology filter
-         grayscale h-40 mx-10' />
+        className='technology h-40 mx-10' />
       <img
         src={efcoreLogo}
-        alt='aspnetcore'
+        alt='efcore'
         className='technology h-40 mx-10' />
       <img
         src={dockerLogo}
         alt='aspnetcore'
         className='technology h-40 mx-10' />
-      <img src={vueLogo}
-           alt='aspnetcore'
-           className='technology h-40 mx-10' />
+      <img
+        src={vueLogo}
+        alt='vue'
+        className='technology h-40 mx-10' />
       <img
         src={reactLogo}
-        alt='aspnetcore'
+        alt='react'
         className='technology h-40 mx-10' />
     </div>
   );
