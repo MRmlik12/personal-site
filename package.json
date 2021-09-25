@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.19",
+    "@netlify/functions": "^0.7.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -26,7 +27,9 @@
     "test": "craco test",
     "eject": "react-scripts eject",
     "lint": "eslint ./src",
-    "prettier-eslint": "prettier-eslint --write \"*.+(ts|tsx)\""
+    "prettier-eslint": "prettier-eslint --write \"*.+(ts|tsx)\"",
+    "postinstall": "netlify-lambda install",
+    "serve-functions": "netlify-lambda serve src/functions"
   },
   "eslintConfig": {
     "extends": [
@@ -58,6 +61,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.25.2",
+    "netlify-lambda": "^2.0.14",
     "postcss": "^7",
     "prettier": "2.4.1",
     "prettier-eslint-cli": "^5.0.1",
