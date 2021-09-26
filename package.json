@@ -12,13 +12,15 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "global": "^4.4.0",
+    "netlify-cli": "^6.9.17",
     "node-sass": "^5.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "react-page-scroller": "^2.2.1",
     "react-scripts": "4.0.3",
-    "typescript": "^4.1.2",
+    "typescript": "^4.4.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -29,7 +31,8 @@
     "lint": "eslint ./src",
     "prettier-eslint": "prettier-eslint --write \"*.+(ts|tsx)\"",
     "postinstall": "netlify-lambda install",
-    "serve-functions": "netlify-lambda serve src/functions"
+    "build-functions": "netlify-lambda build functions",
+    "serve-functions": "netlify-lambda serve lambda"
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +53,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.15.0",
     "@craco/craco": "^6.3.0",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
