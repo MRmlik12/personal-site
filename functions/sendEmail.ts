@@ -1,10 +1,15 @@
 import {Handler} from '@netlify/functions';
 
-const handler: Handler = async (event, context) => {
+export const handler: Handler = async (event, context) => {
+  if (event.httpMethod !== 'POST') {
+    return {
+      statusCode: 405,
+      message: 'Method not allowed',
+    };
+  }
+
   return {
     statusCode: 200,
-    body: JSON.stringify({message: 'Hello World'}),
+    message: JSON.stringify({message: 'Hello World'}),
   };
 };
-
-export {handler};
