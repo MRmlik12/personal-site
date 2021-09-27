@@ -4,4 +4,4 @@
   publish = "build"
 
 [functions]
-  directory = "lambda"
+  directory = "functions"
