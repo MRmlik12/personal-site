@@ -2,3 +2,6 @@
   command = "yarn build"
   functions = "lambda"
   publish = "build"
+
+[functions]
+  directory = "lambda"
