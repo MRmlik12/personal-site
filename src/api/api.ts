@@ -1,6 +1,6 @@
 import axios, {AxiosResponse} from 'axios';
 
-const BASE_URL = 'http://localhost:44093';
+const BASE_URL = 'https://dolczyk.netlify.app:44093';
 
 type SendEmailResponse = {
   message: string | null,
