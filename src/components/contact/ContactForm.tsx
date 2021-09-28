@@ -17,15 +17,9 @@ export default function ContactForm(): ReactElement {
     'w-1/2 border-2 bg-red-400 border-red-400 bg-opacity-0 mx-12 p-2 mb-5 placeholder-white placeholder-opacity-60';
   const textAreaStyle = `${inputStyle} h-64`;
 
-  const encode = (data: FormContact): FormData => {
-    const formData = new FormData();
-
-    formData.append('form-name', data.formName);
-    formData.append('title', data.title);
-    formData.append('email', data.email);
-    formData.append('message', data.message);
-
-    return formData;
+  const encode = (data: FormContact): string => {
+    return `form-name=${data.formName}&title=${data.title}` +
+      `&email=${data.email}&message=${data.message}`;
   };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
