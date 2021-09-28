@@ -58,6 +58,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.25.2",
+    "netlify-cli": "^6.9.22",
     "postcss": "^7",
     "prettier": "2.4.1",
     "prettier-eslint-cli": "^5.0.1",
