@@ -50,6 +50,7 @@ export default function ContactForm(): ReactElement {
       <form
         id="message-form"
         onSubmit={async (e) => await handleSubmit(e)}
+        method="POST"
         data-netlify="true"
       >
         <input
