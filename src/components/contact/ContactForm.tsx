@@ -25,7 +25,7 @@ export default function ContactForm(): ReactElement {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(title, email, message);
-    await fetch('/contact', {
+    await fetch('/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
