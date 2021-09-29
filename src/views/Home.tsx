@@ -1,9 +1,10 @@
 import React, {ReactElement} from 'react';
 import Typewriter from 'typewriter-effect';
+import '../components/home/Home.sass';
 
 export default function Home(): ReactElement {
   return (
-    <div className="container w-2/5 ml-10">
+    <div className="home container w-2/5 ml-10">
       <h1 className="text-6xl text-white font-mono">
         Hello, My name is
         <div className="font-bold text-yellow-600">
