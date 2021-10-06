@@ -3,11 +3,11 @@ import React, {ReactElement} from 'react';
 export default function ContactForm(): ReactElement {
   const inputStyle =
     // eslint-disable-next-line max-len
-    'w-1/2 border-2 bg-red-400 border-red-400 bg-opacity-0 mx-12 p-2 mb-5 placeholder-white placeholder-opacity-60';
-  const textAreaStyle = `${inputStyle} h-64`;
+    'w-8/12 border-2 bg-red-400 border-red-400 bg-opacity-0 mx-12 p-2 mb-5 placeholder-white placeholder-opacity-60';
+  const textAreaStyle = `${inputStyle} h-32`;
 
   return (
-    <div className="block mt-12">
+    <div className="block mt-6">
       <form>
         <input
           className={inputStyle}
@@ -27,7 +27,8 @@ export default function ContactForm(): ReactElement {
         />
         <br />
         <button
-          className="border-2 bg-red-400 p-1 text-black w-1/2 border-red-400"
+          className=
+            "w-8/12 border-2 bg-red-400 p-1 text-black w-1/2 border-red-400"
         >
           Send
         </button>

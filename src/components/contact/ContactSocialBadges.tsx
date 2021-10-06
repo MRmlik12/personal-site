@@ -4,7 +4,7 @@ import {GoRepo} from 'react-icons/go';
 
 export default function ContactSocialBadges(): ReactElement {
   return (
-    <div className="inline-flex bottom-0 mt-20 p-5">
+    <div className="inline-flex bottom-0 mt-10 p-5">
       <FaGithub
         className="text-5xl mx-3 cursor-pointer"
         onClick={() => open('https://github.com/MRmlik12')}
