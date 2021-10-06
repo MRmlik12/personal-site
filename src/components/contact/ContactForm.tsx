@@ -4,7 +4,7 @@ export default function ContactForm(): ReactElement {
   const inputStyle =
     // eslint-disable-next-line max-len
     'w-8/12 border-2 bg-red-400 border-red-400 bg-opacity-0 mx-12 p-2 mb-5 placeholder-white placeholder-opacity-60';
-  const textAreaStyle = `${inputStyle} h-64`;
+  const textAreaStyle = `${inputStyle} h-32`;
 
   return (
     <div className="block mt-6">
