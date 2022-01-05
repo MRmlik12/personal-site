@@ -6,7 +6,7 @@ export default function Technologies(): ReactElement {
   return (
     <div className="technologies container mx-auto content-center text-center">
       <h1 className="text-7xl font-extrabold mb-10 p-1.5">
-        Technologies Which I&apos;m Use
+        Technologies Which Use
       </h1>
       <TechnologyList />
     </div>
